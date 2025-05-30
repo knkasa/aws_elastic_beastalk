@@ -7,8 +7,8 @@ my_dash_app/
 │── Procfile             # (Optional) Defines the startup command
 │── Dockerrun.aws.json   # (Optional) If using a Docker container
 
-1. zip the my_dash_app
-2. For "EC2 instance profile", if the app needs to access like s3, you will need to create a role with EC2 service & s3 policies. Attach it here.
+1. zip the my_dash_app.  Open Elastic beanstalk in AWS, upload the zip file.
+2. During setup, for "EC2 instance profile", if the app needs to access like s3, you will need to create a role with EC2 service & s3 policies. Attach it here.
 3. For instance profile, create a role for EC2 service with AWSElasticBeanstalkMulticontainerDocker, AWSElasticBeanstalkWebTier, AWSElasticBeanstalkWorkerTier policies.
 4. In last page, for Environment properties, use the default Name and Value. (you'll need this if your app using python, for package management)
 
